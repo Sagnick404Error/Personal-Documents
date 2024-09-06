@@ -1,0 +1,283 @@
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\footskip}{4.08003pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=2.0cm, top=2cm, right=2cm, bottom=2cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\footskip}{4.08003pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{SAGNICK BANERJEE} % Your Name
+\newcommand{\phone}{8697224837}
+\newcommand{\emaila}{sagnickbanerjee28@gmail.com}
+
+\usepackage{fontawesome}
+\RequirePackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{\dimexpr\linewidth-0.3cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} \\ 
+  {\raisebox{0.0\height}{\footnotesize \faPhone}\ +91-\phone} & \href{https://github.com/Sagnick404Error}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}}\\
+  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize 
+ \faEnvelope}\ {\emaila}}&\href{https://www.linkedin.com/in/sagnick-banerjee-71364b21b/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+\end{tabularx}
+}
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Government College of Engineering and Leather Technology}{CGPA: 8.82}
+      {Bachelor of Technology in Information Technology}{2020-24}
+    \resumeSubheading
+      {Budge Budge P.K. High School}{Percentage: 78.4}
+      {West Bengal Council of Higher Secondary Education (WBCHSE)}{2020}
+  \resumeSubheading
+      {Budge Budge P.K. High School}{Percentage: 77}
+      {West Bengal Board of Secondary Education (WBBSE)}{2018}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Technical Skills}{: Java, Python} \\
+     \textbf{Libraries}{: Pandas, Numpy} \\
+     \textbf{Databases}{: Relational Database(mySql)} \\
+     \textbf{Relevent Coursework}{: Database Management System, Data Structures \& Algorithms} \\
+     \textbf{Area of Interest}{: Machine Learning} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {MULTIPLE DISEASE PREDICTION} %Project Name
+      {Web application for predicting multiple diseases using machine learning models with high accuracy
+      } %Project Name, Location Name
+      {Jan 2024 - April 2024} %Event Dates
+
+      \resumeItemListStart
+      \item {Developed and deployed this web app to predict multiple diseases, including diabetes, Parkinson’s disease, and
+heart disease, using machine learning models.}
+        \item {Achieved high accuracies for all disease prediction models: heart disease (81.96\%), diabetes (77.27\%), and Parkinson’s disease (87.17\%).}
+        \item {Technologies used: Python, Streamlit, scikit-learn, ML algorithms - Logistic Regression}
+        
+    \resumeItemListEnd
+    \vspace{-2.0mm}
+
+    % \resumeProject
+    %   {ATM INTERFACE} %Project Name
+    %   {Desktop-Based ATM Interface} %Project Name, Location Name
+    %   {} %Event Dates
+
+    %   \resumeItemListStart
+    %   \item {Developed a user-friendly ATM interface with a keypad, display window, choice options, and help screen using JavaAWT, Swing.}
+    %   \item {Implemented secure user authentication and account management features, including balance inquiries, deposits, withdrawals.}
+    %   \item {Utilized JDBC for seamless integration with a MySQL database to store and manage user data and transaction records.}
+    %     \item {Tools \& technologies used: Java, JDBC, MySQL}
+        
+    \resumeItemListEnd
+    \vspace{-2.0mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {\href{https://drive.google.com/file/d/1i22snTSa6cAc9suOMuIDVmpPuY3EPs0T/view?usp=sharing}{Data Analytics Virtual Internship \faExternalLink}}{Online}
+      {Accenture}{May 2024 - Jun 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Cleaned and modeled data by merging CSV files with more than 25000 data points, filtering the top 5 categories
+based on total scores}
+    \item {Leveraged advanced data visualization tools, achieving a increase in data clarity and accessibility}
+    \item {Presented insights to the client}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+    % \resumeSubheading
+    %   {Company Name}{Online}
+    %   {Your Role}{Event dates}
+    %   \vspace{-2.0mm}
+    %   \resumeItemListStart
+    % \item {Work description line 1}
+    % \item {Work description line 2}
+    % \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-4.5mm}
+
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Sports Assistant Head } % Position
+    {Organized sport fest}
+
+    
+    %Club,Event
+    % {Position tenure} %Tenure Period
+%     -work description in 1 line
+% \resumePOR{Position, } % Position
+%     {Club or Event} %Club,Event
+%     {Position tenure} %Tenure Period
+% -work description in 1 line
+
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{\href{https://www.cloudskillsboost.google/public_profiles/91abd19b-9eeb-47b8-813e-cb3c08d9a586}{Achieve milestone batches in Google Cloud \faExternalLink}} % Award
+    {} % Event
+    {} %Event Year
+    
+% \resumePOR{Achievement } % Award
+%     {description} % Event
+%     {Event dates} %Event Year
+% \resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
